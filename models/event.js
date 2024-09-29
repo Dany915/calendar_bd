@@ -24,6 +24,12 @@ const eventSchema = Schema({
     //trim: true,     // Elimina espacios en blanco
     default: 'assets/event_day.png', 
   },
+  icon: {
+    type: String,
+    required: [true, 'Campo obligatorio'], // Campo obligatorio
+    //trim: true,     // Elimina espacios en blanco
+    default: 'assets/icons/default.svg', 
+  },
   tipo: {
     type: String,    
     required: true,
